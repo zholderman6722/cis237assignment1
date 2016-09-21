@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace assignment1
 {
-    class Class1
+    class WineItem
     {
+        private string description;
+        private string id;
+        private string pack;
     }
 }

@@ -10,6 +10,10 @@ namespace assignment1
     {
         static void Main(string[] args)
         {
+            
+            WineItem myWineItem = new WineItem();
+
+            System.IO.File.ReadAllText("file");
         }
     }
 }
