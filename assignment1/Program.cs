@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-
 namespace assignment1
 {
     class Program
@@ -19,15 +18,26 @@ namespace assignment1
             WineItem[] wineItems = new WineItem[3964];
 
             //call CSV Processor to Load File while allowing user to choose the file
-            ImportCSV("WineList.csv", wineItems);
+            Console.WriteLine("What is the name of the CSV file that you would like to load?");
+            String pathToCsvFile = Console.ReadLine();
+            ImportCSV(pathToCsvFile, wineItems);
 
             //Instantiate a new UI Class to call methods after processing CSV File and reading contents.
             userInterface ui = new userInterface();
 
-            
+            //Create a collection from the Array
+            //List<WineItem> wineItemsss = new List<WineItem>();
+           // string combined = string.Empty;
+            //foreach (WineItem item in wineItemsss)
+            //{
+               // combined += item.ToString() + Environment.NewLine;
+            //}
+            //Console.WriteLine("Test");
+            //Console.WriteLine(combined);
 
 
-            
+
+
 
             //Get users input choice
             int choice = ui.GetUserInput();
@@ -56,7 +66,6 @@ namespace assignment1
                 //If the choice they made is 2, search for item id provided by user and if found print it out
                 if (choice == 2)
                 {
-
                 }
                 //If the choice they made is 3, allow user to add a new wine item to the list
                 if (choice == 3)
@@ -79,7 +88,7 @@ namespace assignment1
             {
                 //Declare a string for each line we will read in.
                 string line;
-
+                
                 //Instanciate the streamReader. If the path to file is incorrect it will
                 //throw an exception that we can catch
                 streamReader = new StreamReader(pathToCsvFile);
@@ -141,5 +150,16 @@ namespace assignment1
             //the spot in the employees array indexed by the index that was passed in.
             wineItems[index] = new WineItem(id, description, pack);
         }
+        static string LinearSearch(WineItem[] wineItem)
+        {
+            
+            Console.WriteLine("What is the id number of the WineItem that you are looking for?");
+            String idSearch = Console.ReadLine();
+            Console.WriteLine("Attempting Search...");
+           
+
+            return idSearch;  
+        }
+
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace assignment1
 {
+    //converts array to a list
     class WineItemCollection
     {
-        WineItem[] wineItems;
+        
     }
 }
