@@ -2,7 +2,7 @@
 
 ## Due 02-01-2016
 
-## Author
+## Zachery Holderman
 
 ## Description
 
@@ -53,7 +53,9 @@ Suggestion/Hints:
 * Remember to handle (gracefully) cases where the user enters something incorrectly.
 
 ## Outside Resources Used
-
+http://stackoverflow.com/questions/12948306/how-to-convert-an-array-of-objects-to-list
+Referenced inClass Assignment 1
 ## Known Problems, Issues, And/Or Errors in the Program
-
+Unable to provide the linear search function to search by id number.
+Unable to correctly use the list to store object array values and add items to list through user input...
 

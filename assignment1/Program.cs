@@ -24,16 +24,9 @@ namespace assignment1
 
             //Instantiate a new UI Class to call methods after processing CSV File and reading contents.
             userInterface ui = new userInterface();
+            
+            IList<WineItem> collectionOfWine = new List<WineItem>(wineItems);
 
-            //Create a collection from the Array
-            //List<WineItem> wineItemsss = new List<WineItem>();
-           // string combined = string.Empty;
-            //foreach (WineItem item in wineItemsss)
-            //{
-               // combined += item.ToString() + Environment.NewLine;
-            //}
-            //Console.WriteLine("Test");
-            //Console.WriteLine(combined);
 
 
 
@@ -66,6 +59,7 @@ namespace assignment1
                 //If the choice they made is 2, search for item id provided by user and if found print it out
                 if (choice == 2)
                 {
+                    collectionOfWine.Add(myWineItem);
                 }
                 //If the choice they made is 3, allow user to add a new wine item to the list
                 if (choice == 3)
